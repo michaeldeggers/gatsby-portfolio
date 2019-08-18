@@ -12,10 +12,27 @@ import { css } from "@emotion/core"
 
 import Header from "./header"
 
-const divCSS = css`
-  margin: 0 auto;
+const siteCSS = css`
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+`
+const contentCSS = css`
+  margin: 0;
   max-width: 960px;
   padding: 0 1.0875rem 1.45rem; 
+  flex: 1;
+`
+const mainCSS = css`
+  margin: 0;
+  max-width: 960px;
+  padding: 0 1.0875rem 1.45rem; 
+  flex: 1;
+`
+
+const footerCSS = css`
+  text-align: center;
+  padding: 1rem 0; 
 `
 
 const Layout = ({ children }) => {
@@ -30,17 +47,17 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div css={siteCSS}>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div css={divCSS}>
-        <main>{children}</main>
-        <footer>
+      {/*<div css={contentCSS}>*/}
+        <main css={mainCSS}>{children}</main>
+        <footer css={footerCSS}>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
-      </div>
-    </>
+      {/*</div>*/}
+    </div>
   )
 }
 

@@ -13,10 +13,10 @@ const divCSS = css`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <SEO title="home" />
+    <h1>Hi all</h1>
+    <p>Welcome to my portfolio</p>
+    <p>This is the beginnings of what will become a portfolio / blog to showcase my work ( and just have some fun ).</p>
     <div css={divCSS}>
       <Image />
     </div>

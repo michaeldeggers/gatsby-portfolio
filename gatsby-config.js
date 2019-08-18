@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Eggs Over Easy`,
+    title: `eggs over easy`,
     description: `Portfolio Site / Blog for all things Eggs related`,
     author: `@michaeldeggers`,
   },
@@ -25,13 +25,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `eggs-over-easy`,
+        short_name: `eggs`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
