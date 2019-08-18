@@ -4,7 +4,7 @@ import React from "react"
 import { css } from "@emotion/core"
 
 const headerCSS = css`
-  background: #23238D;
+  background: #011919;
   margin-bottom: 1.45rem;
 `
 const LinkCSS = css`
