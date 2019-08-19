@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
   return (
     <div css={siteCSS}>
       <Header siteTitle={data.site.siteMetadata.title} />
-        <main css={mainCSS} sx={{fontFamily: 'body', color: 'text'}}>{children}</main>
+        <main css={mainCSS}>{children}</main>
         <footer css={footerCSS} sx={{bg: 'primary', color: '#fff'}}>
           © {new Date().getFullYear()}, Built with
           {` `}
